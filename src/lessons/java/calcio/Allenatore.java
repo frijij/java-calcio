@@ -1,5 +1,7 @@
 package lessons.java.calcio;
 
+import java.time.LocalDate;
+
 public class Allenatore extends Persona{
 
     // ATTRIBUTI: strategia (es: difensiva o offensiva)
@@ -8,6 +10,11 @@ public class Allenatore extends Persona{
     // COSTRUTTORI
 public Allenatore(String nome, int eta, String strategia){
     super(nome, eta);
+    this.strategia=strategia;
+}
+
+public Allenatore(String nome, LocalDate dataDiNascita, String strategia){
+    super(nome, dataDiNascita);
     this.strategia=strategia;
 }
     // GETTER E SETTER

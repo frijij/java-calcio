@@ -1,5 +1,6 @@
 package lessons.java.calcio;
 
+import java.time.LocalDate;
 import java.util.Random;
 
 public class Generatore {
@@ -58,4 +59,12 @@ public class Generatore {
         String strategiaRandom= STRATEGIE[random.nextInt(STRATEGIE.length)];
         return strategiaRandom;
     }
+
+   // generare data di nascita random
+    public static LocalDate generaData(int eta){
+        Random random= new Random();
+        LocalDate dataRandom = LocalDate.now().minusYears(eta).minusDays(random.nextInt(-364,365));
+        return dataRandom;
+    }
+
 }
