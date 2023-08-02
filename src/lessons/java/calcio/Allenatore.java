@@ -14,6 +14,14 @@ public Allenatore(String nome, int eta, String strategia){
 public String getStrategia(){
     return strategia;
 }
-    // METODI
 
+    // METODI
+    @Override
+    public String toString() {
+        return "Allenatore{" +
+                "nome: '" + getNome() + '\'' +
+                ", età: " + getEta() +
+                ", strategia: '" + strategia + '\'' +
+                '}';
+    }
 }
