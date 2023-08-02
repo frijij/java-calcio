@@ -31,7 +31,6 @@ public class Main {
         // creo la squadra
         Squadra squadra= new Squadra(listaGiocatori, allenatore);
         System.out.println("Ecco la tua squadra: " + '\n' + squadra);
-        //System.out.println(squadra.getListaGiocatori());
 
     }
 }
